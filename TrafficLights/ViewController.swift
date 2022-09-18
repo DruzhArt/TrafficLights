@@ -16,7 +16,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        redLight.layer.cornerRadius = 64
+        yellowLight.layer.cornerRadius = 64
+        greenLight.layer.cornerRadius = 64
+        startButton.layer.cornerRadius = 10
     }
     
     @IBAction func trafficButton() {
