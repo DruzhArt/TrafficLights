@@ -19,10 +19,20 @@ class ViewController: UIViewController {
         redLight.layer.cornerRadius = 64
         yellowLight.layer.cornerRadius = 64
         greenLight.layer.cornerRadius = 64
+        
         startButton.layer.cornerRadius = 10
+        
+        redLight.alpha = 0.3
+        yellowLight.alpha = 0.3
+        greenLight.alpha = 0.3
+        
+        
     }
     
-    @IBAction func trafficButton() {
+    @IBAction func trafficButtonDidOn() {
+        startButton.setTitle("NEXT", for: .normal)
+        redLight.alpha = 1
+        
     }
     
     
