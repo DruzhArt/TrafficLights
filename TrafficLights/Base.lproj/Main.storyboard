@@ -40,14 +40,16 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaE-1R-qQk">
                                 <rect key="frame" x="158.66666666666666" y="717.66666666666663" width="75.666666666666657" height="34.333333333333371"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75.666666666666657" id="32d-Yj-s90"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="NEXT"/>
                                 <buttonConfiguration key="configuration" style="plain" title="START"/>
                                 <connections>
-                                    <action selector="trafficButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="SGS-9r-39A"/>
+                                    <action selector="trafficButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="g5N-u3-zLE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,6 +67,7 @@
                     <connections>
                         <outlet property="greenLight" destination="LZK-BT-Eb2" id="agA-kL-uTr"/>
                         <outlet property="redLight" destination="dN3-aF-mxW" id="lXf-s6-OA0"/>
+                        <outlet property="startButton" destination="MaE-1R-qQk" id="o66-Ec-Khj"/>
                         <outlet property="yellowLight" destination="PyR-uM-iMv" id="pYM-I5-zFk"/>
                     </connections>
                 </viewController>
@@ -74,6 +77,12 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
