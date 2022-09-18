@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet var greenLight: UIView!
     @IBOutlet var startButton: UIButton!
     
+    var changes = 0
+    var isAlpha = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         redLight.layer.cornerRadius = 64
@@ -31,9 +34,23 @@ class ViewController: UIViewController {
     
     @IBAction func trafficButtonDidOn() {
         startButton.setTitle("NEXT", for: .normal)
-        redLight.alpha = 1
+        //        redLight.alpha = 1
         
-    }
-    
+            if isAlpha {
+                redLight.alpha = 1
+                isAlpha = false
+            } else if redLight.alpha == 1 {
+                yellowLight.alpha = 1
+                redLight.alpha = 0.3
+            } else if yellowLight.alpha == 1 {
+                greenLight.alpha = 1
+                yellowLight.alpha = 0.3
+                redLight.alpha = 0.3
+            } else if greenLight.alpha == 1 {
+                greenLight.alpha = 0.3
+                yellowLight.alpha = 0.3
+                redLight.alpha = 1
+            }
+        }
     
 }
