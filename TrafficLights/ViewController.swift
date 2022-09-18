@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var greenLight: UIView!
     @IBOutlet var startButton: UIButton!
     
-    var changes = 0
+    
     var isAlpha = true
     
     override func viewDidLoad() {
@@ -34,7 +34,6 @@ class ViewController: UIViewController {
     
     @IBAction func trafficButtonDidOn() {
         startButton.setTitle("NEXT", for: .normal)
-        //        redLight.alpha = 1
         
             if isAlpha {
                 redLight.alpha = 1
