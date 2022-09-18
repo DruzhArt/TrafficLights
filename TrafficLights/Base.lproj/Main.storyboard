@@ -34,6 +34,9 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="NEXT"/>
                                 <buttonConfiguration key="configuration" style="plain" title="START"/>
+                                <connections>
+                                    <action selector="trafficButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="SGS-9r-39A"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZK-BT-Eb2">
                                 <rect key="frame" x="143" y="441" width="128" height="128"/>
@@ -48,6 +51,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MaE-1R-qQk" secondAttribute="bottom" constant="110" id="hoT-lK-3uh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLight" destination="LZK-BT-Eb2" id="tiK-VW-Ym3"/>
+                        <outlet property="redLight" destination="dN3-aF-mxW" id="yjA-z7-nvV"/>
+                        <outlet property="yellowLight" destination="PyR-uM-iMv" id="sh6-A5-Ddk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
